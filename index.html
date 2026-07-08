@@ -1,173 +1,38 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CarDex | قاعدة بيانات السيارات</title>
+
+<title>CarDex | اكتشف عالم السيارات</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
-<style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Cairo',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#0b0b0b;
-color:white;
-}
-
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:#111;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 8%;
-z-index:999;
-box-shadow:0 0 20px rgba(255,0,0,.2);
-}
-
-.logo{
-font-size:34px;
-font-weight:bold;
-color:#ff2f2f;
-}
-
-.logo span{
-color:white;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-right:25px;
-font-size:18px;
-transition:.3s;
-}
-
-nav a:hover{
-color:#ff2f2f;
-}
-
-.hero{
-height:100vh;
-background:url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1400&q=80") center/cover;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-position:relative;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-inset:0;
-background:rgba(0,0,0,.65);
-}
-
-.hero-content{
-position:relative;
-z-index:5;
-}
-
-.hero h1{
-font-size:65px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:22px;
-margin-bottom:30px;
-color:#ddd;
-}
-
-.search{
-width:90%;
-max-width:650px;
-padding:18px;
-border:none;
-border-radius:50px;
-font-size:20px;
-}
-
-.btn{
-margin-top:20px;
-padding:16px 45px;
-border:none;
-background:#ff2f2f;
-color:white;
-font-size:20px;
-border-radius:50px;
-cursor:pointer;
-transition:.3s;
-}
-
-.btn:hover{
-transform:scale(1.05);
-background:#ff5555;
-}
-
-section{
-padding:90px 8%;
-}
-
-.title{
-font-size:42px;
-margin-bottom:40px;
-text-align:center;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-}
-
-.card{
-background:#171717;
-padding:35px;
-border-radius:18px;
-text-align:center;
-transition:.3s;
-cursor:pointer;
-}
-
-.card:hover{
-transform:translateY(-8px);
-background:#ff2f2f;
-}
-
-.card h3{
-font-size:28px;
-margin-top:15px;
-}
-
-footer{
-background:#111;
-text-align:center;
-padding:40px;
-margin-top:80px;
-color:#999;
-}
-
-</style>
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
-<div class="logo">🚗 Car<span>Dex</span></div>
+<div class="logo">
+
+<i class="fa-solid fa-car-side"></i>
+
+CarDex
+
+</div>
 
 <nav>
 
@@ -175,9 +40,11 @@ color:#999;
 
 <a href="#">الشركات</a>
 
-<a href="#">المقارنات</a>
+<a href="#">المقارنة</a>
 
 <a href="#">الأخبار</a>
+
+<a href="#">تواصل معنا</a>
 
 </nav>
 
@@ -185,331 +52,177 @@ color:#999;
 
 <section class="hero">
 
-<div class="hero-content">
-
-<h1>قاعدة بيانات السيارات</h1>
-
-<p>ابحث عن أي سيارة واعرف جميع مواصفاتها بالتفصيل.</p>
-
-<input class="search" placeholder="ابحث عن سيارة...">
-
-<br>
-
-<button class="btn">ابدأ البحث</button>
-
-</div>
-
-</section><!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CarDex | قاعدة بيانات السيارات</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Cairo',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#0b0b0b;
-color:white;
-}
-
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:#111;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 8%;
-z-index:999;
-box-shadow:0 0 20px rgba(255,0,0,.2);
-}
-
-.logo{
-font-size:34px;
-font-weight:bold;
-color:#ff2f2f;
-}
-
-.logo span{
-color:white;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-right:25px;
-font-size:18px;
-transition:.3s;
-}
-
-nav a:hover{
-color:#ff2f2f;
-}
-
-.hero{
-height:100vh;
-background:url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1400&q=80") center/cover;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-position:relative;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-inset:0;
-background:rgba(0,0,0,.65);
-}
-
-.hero-content{
-position:relative;
-z-index:5;
-}
-
-.hero h1{
-font-size:65px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:22px;
-margin-bottom:30px;
-color:#ddd;
-}
-
-.search{
-width:90%;
-max-width:650px;
-padding:18px;
-border:none;
-border-radius:50px;
-font-size:20px;
-}
-
-.btn{
-margin-top:20px;
-padding:16px 45px;
-border:none;
-background:#ff2f2f;
-color:white;
-font-size:20px;
-border-radius:50px;
-cursor:pointer;
-transition:.3s;
-}
-
-.btn:hover{
-transform:scale(1.05);
-background:#ff5555;
-}
-
-section{
-padding:90px 8%;
-}
-
-.title{
-font-size:42px;
-margin-bottom:40px;
-text-align:center;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-}
-
-.card{
-background:#171717;
-padding:35px;
-border-radius:18px;
-text-align:center;
-transition:.3s;
-cursor:pointer;
-}
-
-.card:hover{
-transform:translateY(-8px);
-background:#ff2f2f;
-}
-
-.card h3{
-font-size:28px;
-margin-top:15px;
-}
-
-footer{
-background:#111;
-text-align:center;
-padding:40px;
-margin-top:80px;
-color:#999;
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">🚗 Car<span>Dex</span></div>
-
-<nav>
-
-<a href="#">الرئيسية</a>
-
-<a href="#">الشركات</a>
-
-<a href="#">المقارنات</a>
-
-<a href="#">الأخبار</a>
-
-</nav>
-
-</header>
-
-<section class="hero">
+<div class="overlay"></div>
 
 <div class="hero-content">
 
-<h1>قاعدة بيانات السيارات</h1>
+<h1>
 
-<p>ابحث عن أي سيارة واعرف جميع مواصفاتها بالتفصيل.</p>
+اكتشف جميع مواصفات السيارات
 
-<input class="search" placeholder="ابحث عن سيارة...">
-
-<br>
-
-<button class="btn">ابدأ البحث</button>
-
-</div>
-
-</section><section>
-
-<h2 class="title">🚘 أشهر الشركات</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Mercedes</h3>
-<p>أفخم السيارات الألمانية.</p>
-</div>
-
-<div class="card">
-<h3>BMW</h3>
-<p>أداء رياضي وتقنيات متطورة.</p>
-</div>
-
-<div class="card">
-<h3>Audi</h3>
-<p>تصميم أنيق ودفع رباعي.</p>
-</div>
-
-<div class="card">
-<h3>Toyota</h3>
-<p>اعتمادية واستهلاك منخفض.</p>
-</div>
-
-<div class="card">
-<h3>Honda</h3>
-<p>جودة عالية ومحركات قوية.</p>
-</div>
-
-<div class="card">
-<h3>Kia</h3>
-<p>سيارات عصرية بأسعار ممتازة.</p>
-</div>
-
-<div class="card">
-<h3>Hyundai</h3>
-<p>تقنيات حديثة وتصاميم مميزة.</p>
-</div>
-
-<div class="card">
-<h3>Porsche</h3>
-<p>سيارات رياضية فاخرة.</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="title">🔥 السيارات الأكثر بحثًا</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Mercedes C63 AMG</h3>
-<p>2026</p>
-</div>
-
-<div class="card">
-<h3>BMW M5 Competition</h3>
-<p>2026</p>
-</div>
-
-<div class="card">
-<h3>Audi RS7</h3>
-<p>2026</p>
-</div>
-
-<div class="card">
-<h3>Ferrari SF90</h3>
-<p>2026</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="title">📰 آخر الأخبار</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>إطلاق BMW M3 الجديدة</h3>
-</div>
-
-<div class="card">
-<h3>مرسيدس تكشف عن محرك جديد</h3>
-</div>
-
-<div class="card">
-<h3>تويوتا تطور سيارات هجينة</h3>
-</div>
-
-</div>
-
-  </section>
-  <footer>
-
-<p>© 2026 CarDex - جميع الحقوق محفوظة</p>
+</h1>
 
 <p>
-أكبر قاعدة بيانات لمواصفات السيارات باللغة العربية.
+
+أكبر قاعدة بيانات عربية للسيارات الحديثة والكلاسيكية.
+
 </p>
+
+<div class="search-box">
+
+<input
+type="text"
+placeholder="ابحث عن سيارة...">
+
+<button>
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+</button>
+
+</div>
+
+<div class="stats">
+
+<div>
+
+<h2>1500+</h2>
+
+<span>سيارة</span>
+
+</div>
+
+<div>
+
+<h2>70+</h2>
+
+<span>شركة</span>
+
+</div>
+
+<div>
+
+<h2>40+</h2>
+
+<span>دولة</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section><section class="brands">
+
+<h2>🏢 أشهر الشركات</h2>
+
+<div class="brand-grid">
+
+<div class="brand-card">
+<img src="https://cdn.simpleicons.org/mercedes" alt="Mercedes">
+<h3>Mercedes-Benz</h3>
+<p>الفخامة الألمانية</p>
+</div>
+
+<div class="brand-card">
+<img src="https://cdn.simpleicons.org/bmw" alt="BMW">
+<h3>BMW</h3>
+<p>متعة القيادة</p>
+</div>
+
+<div class="brand-card">
+<img src="https://cdn.simpleicons.org/audi" alt="Audi">
+<h3>Audi</h3>
+<p>التكنولوجيا والأناقة</p>
+</div>
+
+<div class="brand-card">
+<img src="https://cdn.simpleicons.org/toyota" alt="Toyota">
+<h3>Toyota</h3>
+<p>الاعتمادية</p>
+</div>
+
+<div class="brand-card">
+<img src="https://cdn.simpleicons.org/porsche" alt="Porsche">
+<h3>Porsche</h3>
+<p>الأداء الرياضي</p>
+</div>
+
+<div class="brand-card">
+<img src="https://cdn.simpleicons.org/ferrari" alt="Ferrari">
+<h3>Ferrari</h3>
+<p>السرعة الإيطالية</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="popular">
+
+<h2>🔥 السيارات الأكثر بحثًا</h2>
+
+<div class="cars-grid">
+
+<div class="car-card">
+<h3>Mercedes C63 AMG</h3>
+<p>V8 Twin Turbo</p>
+</div>
+
+<div class="car-card">
+<h3>BMW M5 Competition</h3>
+<p>625 HP</p>
+</div>
+
+<div class="car-card">
+<h3>Audi RS7</h3>
+<p>600 HP</p>
+</div>
+
+<div class="car-card">
+<h3>Porsche 911 Turbo S</h3>
+<p>650 HP</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="news">
+
+<h2>📰 آخر الأخبار</h2>
+
+<div class="news-grid">
+
+<div class="news-card">
+<h3>إطلاق BMW M3 الجديدة</h3>
+<p>تعرف على مواصفاتها الكاملة.</p>
+</div>
+
+<div class="news-card">
+<h3>مرسيدس تكشف عن AMG جديدة</h3>
+<p>قوة وأداء غير مسبوقين.</p>
+</div>
+
+<div class="news-card">
+<h3>تويوتا تطور محركًا هجينًا</h3>
+<p>كفاءة أعلى واستهلاك أقل.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>🚗 CarDex</h2>
+
+<p>أكبر قاعدة بيانات عربية لمواصفات السيارات.</p>
+
+<p>© 2026 جميع الحقوق محفوظة.</p>
 
 </footer>
 
 </body>
+
 </html>

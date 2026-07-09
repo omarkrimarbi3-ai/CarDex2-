@@ -941,3 +941,33 @@ transition:.3s;
 .gallery img:hover{
 transform:scale(1.05);
 }
+.about-car,
+.competitors{
+max-width:1000px;
+margin:40px auto;
+padding:20px;
+}
+
+.pros-cons{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+max-width:1000px;
+margin:40px auto;
+}
+
+.box{
+background:#1b1b1b;
+padding:20px;
+border-radius:15px;
+}
+
+.box ul,
+.competitors ul{
+padding-right:20px;
+}
+
+.box li,
+.competitors li{
+margin:12px 0;
+}

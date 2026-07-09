@@ -29,13 +29,21 @@ console.log(error);
 
 function searchCars(){
 
-const input = document.getElementById("searchInput");
+function searchCars(){
 
-if(!input) return;
+const input=document.getElementById("searchInput");
 
-const text = input.value.toLowerCase();
+const resultsBox=document.getElementById("searchResults");
 
-const results = cars.filter(car =>
+if(!input||!resultsBox)return;
+
+const text=input.value.toLowerCase();
+
+resultsBox.innerHTML="";
+
+if(text==="") return;
+
+const results=cars.filter(car=>
 
 car.brand.toLowerCase().includes(text) ||
 
@@ -43,7 +51,40 @@ car.model.toLowerCase().includes(text)
 
 );
 
-console.log(results);
+if(results.length===0){
+
+resultsBox.innerHTML=`
+<div class="result-card">
+<h3>لا توجد نتائج</h3>
+<p>جرّب كتابة اسم شركة أو سيارة أخرى.</p>
+</div>
+`;
+
+return;
+
+}
+
+results.forEach(car=>{
+
+resultsBox.innerHTML+=`
+
+<div class="result-card">
+
+<h3>${car.brand} ${car.model}</h3>
+
+<p>⚙️ ${car.engine}</p>
+
+<p>⚡ ${car.power}</p>
+
+<p>💰 ${car.price}</p>
+
+</div>
+
+`;
+
+});
+
+}
 
 }
 

@@ -630,3 +630,31 @@ display:block;
 text-decoration:none;
 color:inherit;
 }
+.search-results{
+max-width:900px;
+margin:20px auto;
+display:grid;
+gap:15px;
+}
+
+.result-card{
+background:#1b1b1b;
+border:1px solid rgba(255,255,255,.08);
+padding:18px;
+border-radius:15px;
+transition:.3s;
+}
+
+.result-card:hover{
+transform:translateY(-5px);
+border-color:#e10600;
+}
+
+.result-card h3{
+color:white;
+margin-bottom:8px;
+}
+
+.result-card p{
+color:#cfcfcf;
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "brand": "Mercedes-Benz",
+    "model": "C-Class",
+    "year": 2026,
+    "engine": "2.0L Turbo",
+    "power": "255 HP",
+    "torque": "400 Nm",
+    "transmission": "9G-TRONIC",
+    "drive": "RWD / AWD",
+    "topSpeed": "250 km/h",
+    "acceleration": "6.0 s",
+    "fuel": "Petrol",
+    "price": "$56,000"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "E-Class",
+    "year": 2026,
+    "engine": "2.0L Turbo",
+    "power": "255 HP",
+    "torque": "400 Nm",
+    "transmission": "9G-TRONIC",
+    "drive": "RWD",
+    "topSpeed": "250 km/h",
+    "acceleration": "6.2 s",
+    "fuel": "Petrol",
+    "price": "$63,000"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "S-Class",
+    "year": 2026,
+    "engine": "3.0L Turbo",
+    "power": "429 HP",
+    "torque": "520 Nm",
+    "transmission": "9G-TRONIC",
+    "drive": "AWD",
+    "topSpeed": "250 km/h",
+    "acceleration": "4.9 s",
+    "fuel": "Petrol",
+    "price": "$118,000"
+  }
+]

@@ -971,3 +971,8 @@ padding-right:20px;
 .competitors li{
 margin:12px 0;
 }
+.version-link{
+display:block;
+text-decoration:none;
+color:inherit;
+}

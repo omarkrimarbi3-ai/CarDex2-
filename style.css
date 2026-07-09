@@ -976,3 +976,285 @@ display:block;
 text-decoration:none;
 color:inherit;
 }
+/* ========= HERO ========= */
+
+.car-hero{
+position:relative;
+height:700px;
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+background:#111;
+border-radius:25px;
+margin:40px;
+}
+
+.hero-image{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.hero-overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:linear-gradient(to top,rgba(0,0,0,.85),rgba(0,0,0,.2));
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+text-align:center;
+color:white;
+max-width:900px;
+padding:20px;
+}
+
+.brand-name{
+font-size:22px;
+letter-spacing:3px;
+color:#d4af37;
+}
+
+.hero-content h1{
+font-size:72px;
+margin:20px 0;
+font-weight:900;
+}
+
+.hero-text{
+font-size:24px;
+line-height:1.8;
+max-width:800px;
+margin:auto;
+}
+
+.hero-buttons{
+margin-top:35px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.btn-red,
+.btn-dark{
+padding:18px 38px;
+border-radius:14px;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn-red{
+background:#d60000;
+color:white;
+}
+
+.btn-dark{
+background:#2a2a2a;
+color:white;
+}
+
+.btn-red:hover,
+.btn-dark:hover{
+transform:translateY(-5px);
+}
+
+.section-title{
+display:inline-block;
+padding:14px 35px;
+border:2px solid #d60000;
+border-radius:15px;
+margin:60px auto 35px;
+font-size:32px;
+font-weight:bold;
+background:#181818;
+}
+
+.section-title h2{
+margin:0;
+font-size:34px;
+}
+
+.quick-info{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+padding:40px;
+}
+
+.info-card{
+background:#1a1a1a;
+border-radius:20px;
+padding:35px;
+text-align:center;
+transition:.3s;
+}
+
+.info-card:hover{
+transform:translateY(-8px);
+}
+
+.info-card h2{
+font-size:42px;
+color:#d60000;
+margin-bottom:10px;
+}
+
+.info-card p{
+font-size:22px;
+}
+/* ========= GALLERY ========= */
+
+.gallery-section{
+padding:60px 30px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+max-width:1400px;
+margin:auto;
+}
+
+.gallery-grid img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:18px;
+transition:.3s;
+cursor:pointer;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+/* ========= ABOUT ========= */
+
+.about{
+max-width:1200px;
+margin:70px auto;
+padding:20px;
+font-size:24px;
+line-height:2;
+text-align:center;
+}
+
+/* ========= TABLE ========= */
+
+.specs{
+max-width:1200px;
+margin:70px auto;
+padding:20px;
+}
+
+.specs-table{
+width:100%;
+border-collapse:collapse;
+overflow:hidden;
+border-radius:18px;
+}
+
+.specs-table td{
+padding:22px;
+font-size:22px;
+border-bottom:1px solid #333;
+}
+
+.specs-table tr td:first-child{
+background:#191919;
+font-weight:bold;
+width:40%;
+font-size:24px;
+}
+
+.specs-table tr:hover{
+background:#202020;
+}
+
+/* ========= PROS & CONS ========= */
+
+.pros-cons{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+gap:35px;
+max-width:1300px;
+margin:70px auto;
+padding:20px;
+}
+
+.pros,
+.cons{
+background:#181818;
+padding:35px;
+border-radius:20px;
+}
+
+.pros li,
+.cons li{
+font-size:22px;
+margin:18px 0;
+}
+
+/* ========= COLORS ========= */
+
+.colors{
+max-width:1200px;
+margin:70px auto;
+padding:20px;
+}
+
+.color-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+gap:20px;
+}
+
+.color-card{
+background:#202020;
+padding:30px;
+border-radius:16px;
+font-size:22px;
+text-align:center;
+transition:.3s;
+}
+
+.color-card:hover{
+background:#d60000;
+}
+
+/* ========= COMPETITORS ========= */
+
+.competitors{
+max-width:1200px;
+margin:70px auto;
+padding:20px;
+}
+
+.cars-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.car-box{
+background:#181818;
+padding:35px;
+border-radius:18px;
+font-size:24px;
+font-weight:bold;
+text-align:center;
+transition:.3s;
+}
+
+.car-box:hover{
+transform:translateY(-8px);
+border:2px solid #d60000;
+}

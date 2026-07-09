@@ -658,3 +658,25 @@ margin-bottom:8px;
 .result-card p{
 color:#cfcfcf;
 }
+.model-list{
+list-style:none;
+padding:0;
+margin-top:15px;
+}
+
+.model-list li{
+margin:10px 0;
+}
+
+.model-list a{
+text-decoration:none;
+color:#ffffff;
+font-weight:700;
+font-size:18px;
+transition:.3s;
+}
+
+.model-list a:hover{
+color:#e10600;
+padding-right:8px;
+}

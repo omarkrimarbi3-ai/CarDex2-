@@ -1258,3 +1258,6 @@ transition:.3s;
 transform:translateY(-8px);
 border:2px solid #d60000;
 }
+body{
+    transition:background-image 1s ease-in-out;
+}

@@ -286,6 +286,41 @@ CarDex
 
 </footer>
 <script src="script.js"></script>
+  <script>
+const backgrounds = [
+"bg1.jpg",
+"bg2.jpg",
+"bg3.jpg",
+"bg4.jpg",
+"bg5.jpg",
+"bg6.jpg",
+"bg7.jpg",
+"bg8.jpg",
+"bg9.jpg"
+];
+
+let current = 0;
+
+function changeBackground(){
+    document.body.style.backgroundImage =
+    `linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('${backgrounds[current]}')`;
+
+    document.body.style.backgroundSize="cover";
+    document.body.style.backgroundPosition="center";
+    document.body.style.backgroundRepeat="no-repeat";
+    document.body.style.backgroundAttachment="fixed";
+
+    current++;
+
+    if(current>=backgrounds.length){
+        current=0;
+    }
+}
+
+changeBackground();
+
+setInterval(changeBackground,3000);
+</script>
 </body>
 
 </html>

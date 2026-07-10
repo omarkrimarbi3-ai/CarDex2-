@@ -587,27 +587,22 @@ const backgrounds = [
 "bg9.jpg.jpg"
 ];
 
+const hero = document.querySelector(".hero");
+
 let current = 0;
 
-function changeBackground(){
-    document.body.style.backgroundImage =
-    `linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url('${backgrounds[current]}')`;
-
-    document.body.style.backgroundSize="cover";
-    document.body.style.backgroundPosition="center";
-    document.body.style.backgroundRepeat="no-repeat";
-    document.body.style.backgroundAttachment="fixed";
+function changeBackground() {
+    hero.style.backgroundImage = "url('" + backgrounds[current] + "')";
 
     current++;
 
-    if(current>=backgrounds.length){
-        current=0;
+    if (current >= backgrounds.length) {
+        current = 0;
     }
 }
 
 changeBackground();
-
-setInterval(changeBackground,3000);
+setInterval(changeBackground, 3000);
 </script>
 </body>
 

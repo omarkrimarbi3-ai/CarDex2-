@@ -1,6 +1,5 @@
 // ================================
 // CarDex JavaScript
-// الإصدار الأول
 // ================================
 
 let cars = [];
@@ -9,91 +8,51 @@ let cars = [];
 fetch("cars.json")
 .then(response => response.json())
 .then(data => {
-
-cars = data;
-
-console.log("تم تحميل قاعدة البيانات");
-
-console.log(cars);
-
+    cars = data;
 })
-.catch(error => {
-
-console.log("حدث خطأ");
-
-console.log(error);
-
-});
+.catch(error => console.log(error));
 
 // البحث
+function searchCars() {
 
-function searchCars(){
+    const input = document.getElementById("searchInput");
+    const resultsBox = document.getElementById("searchResults");
 
-function searchCars(){
+    if (!input || !resultsBox) return;
 
-const input=document.getElementById("searchInput");
+    const text = input.value.toLowerCase();
 
-const resultsBox=document.getElementById("searchResults");
+    resultsBox.innerHTML = "";
 
-if(!input||!resultsBox)return;
+    if (text === "") return;
 
-const text=input.value.toLowerCase();
+    const results = cars.filter(car =>
+        car.brand.toLowerCase().includes(text) ||
+        car.model.toLowerCase().includes(text)
+    );
 
-resultsBox.innerHTML="";
+    if (results.length === 0) {
+        resultsBox.innerHTML = `
+        <div class="result-card">
+            <h3>لا توجد نتائج</h3>
+            <p>جرّب اسمًا آخر.</p>
+        </div>`;
+        return;
+    }
 
-if(text==="") return;
-
-const results=cars.filter(car=>
-
-car.brand.toLowerCase().includes(text) ||
-
-car.model.toLowerCase().includes(text)
-
-);
-
-if(results.length===0){
-
-resultsBox.innerHTML=`
-<div class="result-card">
-<h3>لا توجد نتائج</h3>
-<p>جرّب كتابة اسم شركة أو سيارة أخرى.</p>
-</div>
-`;
-
-return;
-
+    results.forEach(car => {
+        resultsBox.innerHTML += `
+        <div class="result-card">
+            <h3>${car.brand} ${car.model}</h3>
+            <p>⚙️ ${car.engine}</p>
+            <p>⚡ ${car.power}</p>
+            <p>💰 ${car.price}</p>
+        </div>`;
+    });
 }
-
-results.forEach(car=>{
-
-resultsBox.innerHTML+=`
-
-<div class="result-card">
-
-<h3>${car.brand} ${car.model}</h3>
-
-<p>⚙️ ${car.engine}</p>
-
-<p>⚡ ${car.power}</p>
-
-<p>💰 ${car.price}</p>
-
-</div>
-
-`;
-
-});
-
-}
-
-}
-
-// عند الكتابة داخل مربع البحث
 
 const searchBox = document.getElementById("searchInput");
 
-if(searchBox){
-
-searchBox.addEventListener("input",searchCars);
-
+if (searchBox) {
+    searchBox.addEventListener("input", searchCars);
 }

@@ -1,58 +1,63 @@
-// ================================
-// CarDex JavaScript
-// ================================
-
 let cars = [];
 
-// تحميل قاعدة البيانات
 fetch("cars.json")
 .then(response => response.json())
 .then(data => {
     cars = data;
-})
-.catch(error => console.log(error));
+});
 
-// البحث
-function searchCars() {
+const input = document.getElementById("searchInput");
+const results = document.getElementById("searchResults");
 
-    const input = document.getElementById("searchInput");
-    const resultsBox = document.getElementById("searchResults");
+if (input && results) {
 
-    if (!input || !resultsBox) return;
+    input.addEventListener("input", function () {
 
-    const text = input.value.toLowerCase();
+        const text = input.value.toLowerCase().trim();
 
-    resultsBox.innerHTML = "";
+        results.innerHTML = "";
 
-    if (text === "") return;
+        if (text === "") {
+            results.style.display = "none";
+            return;
+        }
 
-    const results = cars.filter(car =>
-        car.brand.toLowerCase().includes(text) ||
-        car.model.toLowerCase().includes(text)
-    );
+        const found = cars.filter(car =>
+            car.name.toLowerCase().includes(text)
+        );
 
-    if (results.length === 0) {
-        resultsBox.innerHTML = `
-        <div class="result-card">
-            <h3>لا توجد نتائج</h3>
-            <p>جرّب اسمًا آخر.</p>
-        </div>`;
-        return;
-    }
+        if (found.length === 0) {
+            results.innerHTML = "<div class='result'>لا توجد نتائج</div>";
+            results.style.display = "block";
+            return;
+        }
 
-    results.forEach(car => {
-        resultsBox.innerHTML += `
-        <div class="result-card">
-            <h3>${car.brand} ${car.model}</h3>
-            <p>⚙️ ${car.engine}</p>
-            <p>⚡ ${car.power}</p>
-            <p>💰 ${car.price}</p>
-        </div>`;
+        found.forEach(car => {
+
+            const div = document.createElement("div");
+
+            div.className = "result";
+
+            div.textContent = car.name;
+
+            div.onclick = function () {
+                window.location.href = car.page;
+            };
+
+            results.appendChild(div);
+
+        });
+
+        results.style.display = "block";
+
     });
-}
 
-const searchBox = document.getElementById("searchInput");
+    document.addEventListener("click", function (e) {
 
-if (searchBox) {
-    searchBox.addEventListener("input", searchCars);
+        if (!e.target.closest(".search-box")) {
+            results.style.display = "none";
+        }
+
+    });
+
 }

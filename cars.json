@@ -1,44 +1,330 @@
 [
   {
-    "brand": "Mercedes-Benz",
-    "model": "C-Class",
-    "year": 2026,
-    "engine": "2.0L Turbo",
-    "power": "255 HP",
-    "torque": "400 Nm",
-    "transmission": "9G-TRONIC",
-    "drive": "RWD / AWD",
-    "topSpeed": "250 km/h",
-    "acceleration": "6.0 s",
-    "fuel": "Petrol",
-    "price": "$56,000"
+    "name": "Mercedes C180",
+    "page": "c180.html"
   },
   {
-    "brand": "Mercedes-Benz",
-    "model": "E-Class",
-    "year": 2026,
-    "engine": "2.0L Turbo",
-    "power": "255 HP",
-    "torque": "400 Nm",
-    "transmission": "9G-TRONIC",
-    "drive": "RWD",
-    "topSpeed": "250 km/h",
-    "acceleration": "6.2 s",
-    "fuel": "Petrol",
-    "price": "$63,000"
+    "name": "Mercedes C200",
+    "page": "c200.html"
   },
   {
-    "brand": "Mercedes-Benz",
-    "model": "S-Class",
-    "year": 2026,
-    "engine": "3.0L Turbo",
-    "power": "429 HP",
-    "torque": "520 Nm",
-    "transmission": "9G-TRONIC",
-    "drive": "AWD",
-    "topSpeed": "250 km/h",
-    "acceleration": "4.9 s",
-    "fuel": "Petrol",
-    "price": "$118,000"
+    "name": "Mercedes C220d",
+    "page": "c220d.html"
+  },
+  {
+    "name": "Mercedes C300",
+    "page": "c300.html"
+  },
+  {
+    "name": "Mercedes C300e",
+    "page": "c300e.html"
+  },
+  {
+    "name": "Mercedes AMG C43",
+    "page": "c43.html"
+  },
+  {
+    "name": "Mercedes AMG C63",
+    "page": "c63-amg.html"
+  },
+  {
+    "name": "Mercedes CLA",
+    "page": "cla.html"
+  },
+  {
+    "name": "Mercedes CLE",
+    "page": "cle.html"
+  },
+  {
+    "name": "Mercedes CLS",
+    "page": "cls.html"
+  },
+  {
+    "name": "Mercedes E-Class",
+    "page": "e-class.html"
+  },
+    {
+    "name": "BMW 2 Series Gran Coupe",
+    "page": "2-series-gran-coupe.html"
+  },
+  {
+    "name": "BMW 3 Series",
+    "page": "3-series.html"
+  },
+  {
+    "name": "BMW 4 Series",
+    "page": "4-series.html"
+  },
+  {
+    "name": "BMW 5 Series",
+    "page": "5-series.html"
+  },
+  {
+    "name": "BMW 7 Series",
+    "page": "7-series.html"
+  },
+  {
+    "name": "BMW 8 Series",
+    "page": "8-series.html"
+  },
+  {
+    "name": "BMW M2",
+    "page": "m2.html"
+  },
+  {
+    "name": "BMW M3",
+    "page": "m3.html"
+  },
+  {
+    "name": "BMW M4",
+    "page": "m4.html"
+  },
+  {
+    "name": "BMW M5",
+    "page": "m5.html"
+  },
+  {
+    "name": "BMW M8",
+    "page": "m8.html"
+  },
+  {
+    "name": "BMW X1",
+    "page": "x1.html"
+  },
+  {
+    "name": "BMW X3",
+    "page": "x3.html"
+  },
+  {
+    "name": "BMW X5",
+    "page": "x5.html"
+  },
+  {
+    "name": "BMW X6",
+    "page": "x6.html"
+  },
+  {
+    "name": "BMW X7",
+    "page": "x7.html"
+  },
+  {
+    "name": "BMW X5 M",
+    "page": "x5-m.html"
+  },
+  {
+    "name": "BMW X6 M",
+    "page": "x6-m.html"
+  },
+  {
+    "name": "BMW Z4",
+    "page": "z4.html"
+  },
+    {
+    "name": "Audi A3",
+    "page": "a3.html"
+  },
+  {
+    "name": "Audi A4",
+    "page": "a4.html"
+  },
+  {
+    "name": "Audi A5",
+    "page": "a5.html"
+  },
+  {
+    "name": "Audi A6",
+    "page": "a6.html"
+  },
+  {
+    "name": "Audi A8",
+    "page": "a8.html"
+  },
+  {
+    "name": "Audi TT",
+    "page": "tt.html"
+  },
+  {
+    "name": "Audi R8",
+    "page": "r8.html"
+  },
+  {
+    "name": "Audi Q3",
+    "page": "q3.html"
+  },
+  {
+    "name": "Audi Q5",
+    "page": "q5.html"
+  },
+  {
+    "name": "Audi Q7",
+    "page": "q7.html"
+  },
+  {
+    "name": "Audi Q8",
+    "page": "q8.html"
+  },
+  {
+    "name": "Audi RS3",
+    "page": "rs3.html"
+  },
+  {
+    "name": "Audi RS5",
+    "page": "rs5.html"
+  },
+  {
+    "name": "Audi RS6",
+    "page": "rs6.html"
+  },
+  {
+    "name": "Audi RS7",
+    "page": "rs7.html"
+  },
+  {
+    "name": "Audi RS Q8",
+    "page": "rsq8.html"
+  },
+    {
+    "name": "Porsche 718 Cayman",
+    "page": "718-cayman.html"
+  },
+  {
+    "name": "Porsche 718 Boxster",
+    "page": "718-boxster.html"
+  },
+  {
+    "name": "Porsche 911 Carrera",
+    "page": "911-carrera.html"
+  },
+  {
+    "name": "Porsche 911 Carrera S",
+    "page": "911-carrera-s.html"
+  },
+  {
+    "name": "Porsche 911 Carrera GTS",
+    "page": "911-carrera-gts.html"
+  },
+  {
+    "name": "Porsche 911 Turbo",
+    "page": "911-turbo.html"
+  },
+  {
+    "name": "Porsche 911 Turbo S",
+    "page": "911-turbo-s.html"
+  },
+  {
+    "name": "Porsche 911 GT3",
+    "page": "911-gt3.html"
+  },
+  {
+    "name": "Porsche 911 GT3 RS",
+    "page": "911-gt3-rs.html"
+  },
+  {
+    "name": "Porsche Cayenne",
+    "page": "cayenne.html"
+  },
+  {
+    "name": "Porsche Cayenne Coupe",
+    "page": "cayenne-coupe.html"
+  },
+  {
+    "name": "Porsche Macan",
+    "page": "macan.html"
+  },
+  {
+    "name": "Porsche Panamera",
+    "page": "panamera.html"
+  },
+  {
+    "name": "Porsche Taycan",
+    "page": "taycan.html"
+  },
+    {
+    "name": "Ferrari 296 GTB",
+    "page": "296-gtb.html"
+  },
+  {
+    "name": "Ferrari 296 GTS",
+    "page": "296-gts.html"
+  },
+  {
+    "name": "Ferrari SF90 Stradale",
+    "page": "sf90-stradale.html"
+  },
+  {
+    "name": "Ferrari SF90 Spider",
+    "page": "sf90-spider.html"
+  },
+  {
+    "name": "Ferrari Roma",
+    "page": "roma.html"
+  },
+  {
+    "name": "Ferrari 12Cilindri",
+    "page": "12cilindri.html"
+  },
+  {
+    "name": "Ferrari Purosangue",
+    "page": "purosangue.html"
+  },
+  {
+    "name": "Ferrari Daytona SP3",
+    "page": "daytona-sp3.html"
+  },
+  {
+    "name": "Ferrari F80",
+    "page": "f80.html"
+  },
+  {
+    "name": "Ferrari Monza SP2",
+    "page": "monza-sp2.html"
+  },
+  {
+    "name": "Toyota Yaris",
+    "page": "yaris.html"
+  },
+  {
+    "name": "Toyota Corolla",
+    "page": "corolla.html"
+  },
+  {
+    "name": "Toyota Camry",
+    "page": "camry.html"
+  },
+  {
+    "name": "Toyota Avalon",
+    "page": "avalon.html"
+  },
+  {
+    "name": "Toyota GR Supra",
+    "page": "gr-supra.html"
+  },
+  {
+    "name": "Toyota GR86",
+    "page": "gr86.html"
+  },
+  {
+    "name": "Toyota C-HR",
+    "page": "c-hr.html"
+  },
+  {
+    "name": "Toyota RAV4",
+    "page": "rav4.html"
+  },
+  {
+    "name": "Toyota Land Cruiser",
+    "page": "land-cruiser.html"
+  },
+  {
+    "name": "Toyota Hilux",
+    "page": "hilux.html"
+  },
+  {
+    "name": "Toyota Prado",
+    "page": "prado.html"
+  },
+  {
+    "name": "Toyota Sequoia",
+    "page": "sequoia.html"
   }
 ]

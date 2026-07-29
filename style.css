@@ -1341,3 +1341,20 @@ background:#f5f5f5;
 .result:last-child{
 border-bottom:none;
 }
+@media (max-width:768px){
+
+body{
+min-width:1200px;
+overflow-x:auto;
+}
+
+.header,
+.hero,
+.brands,
+.popular,
+.news,
+footer{
+min-width:1200px;
+}
+
+}
